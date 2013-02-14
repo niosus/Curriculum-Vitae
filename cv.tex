@@ -1,0 +1,244 @@
+%%% LaTeX Template: Designer's CV
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Date: March 2012
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document properties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+
+
+% required packages (add your own)
+\usepackage{flowfram}										% column layout
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
+\usepackage{graphicx}										% figures
+\usepackage{url}											% URLs
+\usepackage[usenames,dvipsnames]{xcolor}					% color
+\usepackage{multicol}										% columns env.
+	\setlength{\multicolsep}{0pt}
+\usepackage{paralist}										% compact lists
+\usepackage{tikz}
+
+\definecolor{light-gray}{gray}{0.3}
+\hyphenation{in-terested}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create column layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define length commands
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\vcolumnsep}
+
+% frame setup (flowfram package)
+% left frame
+\newflowframe{0.3\textwidth}{\textheight}{0pt}{0pt}[left]
+	\newlength{\LeftMainSep}
+	\setlength{\LeftMainSep}{0.3\textwidth}
+	\addtolength{\LeftMainSep}{1\columnsep}
+ 
+% small static frame for the vertical line
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+% content of the static frame
+\begin{staticcontents}{1}
+\hfill
+\tikz{%
+	\draw[loosely dotted,color=MidnightBlue,line width=1.5pt,yshift=0]
+	(0,0) -- (0,\textheight);}%
+\hfill\mbox{}
+\end{staticcontents}
+ 
+% right frame
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.6\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\newenvironment{AboutMe}
+	{\ignorespaces\textbf{\color{Black} About me}}
+	{\Sep\ignorespacesafterend}
+	
+\newcommand{\CVSection}[1]
+	{\Large\textbf{#1}\par
+	\SmallSep\normalsize\normalfont}
+
+\newcommand{\CVItem}[1]
+	{\textbf{\color{MidnightBlue} #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Left frame
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\hfill
+	\includegraphics[width=0.6\columnwidth]{photo.jpg}
+	\vspace{-7cm}
+\end{figure}
+
+\begin{flushright}\small
+	Bogoslavskyi I. \\
+	\url{igor.bogoslavskyi@gmail.com}\\ 
+	\SmallSep
+	\url{https://github.com/niosus}\\ 
+	\SmallSep
+	\url{https://www.facebook.com/bogoslavskyi}\\ 
+	\SmallSep
+	+49 (0152) 04471543
+\end{flushright}\normalsize
+\framebreak
+
+
+% Right frame
+%%%%%%%%%%%%%%%%%%%%
+\Huge\bfseries {\color{MidnightBlue} Igor Bogoslavskyi} \\
+\Large\bfseries  Computer Science Student \\
+
+\normalsize\normalfont
+
+% About me
+\begin{AboutMe}
+\newline 
+I am a young computer science specialist, particularly interested in Robotics and Computer Vision fields of study. 
+
+I am fond of the idea of autonomous moving vehicles and look forward to having a chance of facing the problems that arise in this field. \\
+\\ \emph{The best way to contact me would be just to send an e-mail}.
+\end{AboutMe}
+
+% Experience
+\CVSection{Experience}
+\CVItem{June 2012 - present, Assistant in HRL lab
+\newline Albert Ludwigs University of Freiburg, Germany}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto the NAO robot platform with relation to gesture analysis. 
+\end{compactitem}
+\SmallSep
+
+\CVItem{January 2012 - present, Assistant in AIS lab
+\newline Albert Ludwigs University of Freiburg, Germany}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item As an assistant in the Autonomous Intelligent Systems lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto various platforms as well as unmounted, with relation to RGBD object segmentation and traversability analysis. 
+\end{compactitem}
+\SmallSep
+
+\CVItem{November 2011 - April 2012, Tutor in Image Processing class
+\newline Albert Ludwigs University of Freiburg, Germany}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item As a tutor in the chair of Computer Vision and Image Processing at Uni Freiburg my tasks were to help my fellow students to accomplish the course programming assignments. 
+\item Involved c++ programming with relation to blurring/de-blurring, optical flow and segmentation tasks.
+\end{compactitem}
+\SmallSep
+
+\CVItem{December 2010 - October 2011, Junior Software Developer
+\newline Timecode LLC, Kyiv, Ukraine}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+\item worked as part of a team on a game for Android platform. Involved Java Android programming, OpenGL.
+\item worked as part of a team on an Online Content Store controlled via Kinect sensor. Mostly finding and fixing bugs. C\#.
+\end{compactitem}
+\Sep
+
+% Education
+\CVSection{Education}
+\CVItem{2011 - present, Albert-Ludwigs-Universität Freiburg}\\
+MSc. Applied Computer Science
+\SmallSep
+
+\CVItem{2007 - 2011, Kyiv National Taras Shevchenko University}\\
+BSc. Faculty of Cybernetics. Applied Math field. 
+\newline Chair of Computational Methods
+\SmallSep
+
+\CVItem{2004 - 2007, Lyceum 145, Kyiv}\\
+Higher basic education certificate, Mathematics, Physics.
+\Sep
+\clearpage
+\framebreak
+\framebreak
+
+
+\CVSection{Languages}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item English (IELTS 8.0)
+	\item German (~B2) 
+	\item Russian (Native) 
+	\item Ukrainian (Native)
+\end{compactitem}
+\Sep
+% Skills
+\CVSection{Skills}
+\CVItem{Platforms and libraries}
+\begin{multicols}{3}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item ROS 
+	\item OpenCV
+	\item OpenNI 
+	\item OpenGL
+	\item Android
+	\item PCL
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Programming and markup languages}
+\begin{multicols}{3}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item C++ 
+	\item Java 
+	\item Python 
+	\item Matlab/Octave 
+	\item Xml
+	\item SQLite
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Fields of interest}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Mobile Robotics
+	\item Image Processing 
+	\item Kinect 
+	\item Computer Vision 
+	\item Autonomous Navigation
+	\item SLAM
+\end{compactitem}
+\Sep 
+
+\CVSection{Hobbies}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Android-programming
+	\item Volleyball
+	\item Playing guitar 
+	\item Rock music
+	\item Skiing
+	\item Hiking
+	\item Biking
+	\item New technology
+	\item Learning new stuff
+\end{compactitem}
+\Sep
+
+% References
+\CVSection{References}
+References upon request.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
