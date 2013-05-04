@@ -1,0 +1,268 @@
+%%% LaTeX Template: Designer's CV
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Date: March 2012
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document properties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+
+
+% required packages (add your own)
+\usepackage{flowfram}										% column layout
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
+\usepackage{graphicx}										% figures
+\usepackage{url}	
+\usepackage{hyperref}										% URLs
+\usepackage[usenames,dvipsnames]{xcolor}					% color
+\usepackage{multicol}										% columns env.
+	\setlength{\multicolsep}{0pt}
+\usepackage{paralist}										% compact lists
+\usepackage{tikz}
+
+\definecolor{light-gray}{gray}{0.3}
+\hyphenation{in-terested}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create column layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define length commands
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\vcolumnsep}
+
+% frame setup (flowfram package)
+% left frame
+\newflowframe{0.25\textwidth}{\textheight}{0pt}{0pt}[left]
+	\newlength{\LeftMainSep}
+	\setlength{\LeftMainSep}{0.25\textwidth}
+	\addtolength{\LeftMainSep}{1\columnsep}
+ 
+% small static frame for the vertical line
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+% content of the static frame
+\begin{staticcontents}{1}
+\hfill
+\tikz{%
+	\draw[loosely dotted,color=MidnightBlue,line width=1.5pt,yshift=0]
+	(0,0) -- (0,\textheight);}%
+\hfill\mbox{}
+\end{staticcontents}
+ 
+% right frame
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.65\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\newenvironment{AboutMe}
+	{\ignorespaces\textbf{\color{Black} \"{U}ber mich}}
+	{\Sep\ignorespacesafterend}
+	
+\newcommand{\CVSection}[1]
+	{\Large\textbf{#1}\par
+	\SmallSep\normalsize\normalfont}
+
+\newcommand{\CVItem}[1]
+	{\textbf{\color{MidnightBlue} #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Left frame
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\hfill
+	\includegraphics[width=0.6\columnwidth]{photo.jpg}
+	\vspace{-6cm}
+\end{figure}
+\begin{flushright}\small
+	Bogoslavskyi Igor
+	\textbf{Nationalit\"{a}t:} \emph{\\ukrainisch\\}
+	\textbf{Familienstand:} \emph{\\ledig \\keine Kinder\\}
+	\SmallSep
+	\textbf{Telefon:}\\
+	+49 (0152) 04471543\\
+	\textbf{Adresse:}\\ \emph{H\"{a}ndelstrasse 20, \\79104, Freiburg im Br. \\Deutschland}\\
+	\SmallSep
+	\textbf{Ich im Netz:}
+	\href{mailto:igor.bogoslavskyi@gmail.com}{igor.bogoslavskyi@gmail.com}\\ 
+	\SmallSep
+	\href{http://www.linkedin.com/pub/igor-bogoslavskyi/43/50b/726}{LinkedIn::Igor Bogoslavskyi}\\ 
+	\SmallSep
+	\href{https://github.com/niosus}{GitHub::niosus}\\
+	\SmallSep
+	\href{https://www.facebook.com/bogoslavskyi}{Facebook::bogoslavskyi}\\ 
+	\SmallSep
+\end{flushright}\normalsize
+\framebreak
+
+
+% Right frame
+%%%%%%%%%%%%%%%%%%%%
+\Huge\bfseries {\color{MidnightBlue} Igor Bogoslavskyi} \\
+\Large\bfseries  Informatik Student \\
+
+\normalsize\normalfont
+
+% About me
+\begin{AboutMe}
+\newline 
+Ich bin einer junge Informatik-Spezialist, insbesondere in der Robotik und Computer Vision Fachrichtungen interessiert.
+
+Ich bin begeistert von der Idee des selbstfahrenden Autos und freue mich auf eine Chance den Problemen, die in diesem Bereich entstehen, zu l\"{o}sen. \\
+\emph {Der beste Weg, mich zu kontaktieren w\"{a}re einfach eine E-Mail senden.}
+\end{AboutMe}
+
+% Experience
+\CVSection{Erfahrung}
+\CVItem{Juni 2012 - April 2013, Hi-Wi im HRL Labor
+\newline Albert Ludwigs Universit\"{a}t Freiburg, Deutschland}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Als Hi-Wi im Humanoid Robots Labor an der Uni Freiburg, habe ich mit RGBD Sensoren auf dem NAO Roboter gearbeitet. Meine Aufgabe war eine Methode einf\"{u}hren um weisenden Gesten zu erkennen. 
+\end{compactitem}
+\SmallSep
+
+\CVItem{seit Februar 2012, Hi-Wi im AIS Labor
+\newline Albert Ludwigs Universit\"{a}t Freiburg, Deutschland}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item Als Hi-Wi im Autonomous Intelligent Systems Labor an der Uni Freiburg, habe ich mit Kinect RGBD Sensoren gearbeitet. Meine Aufgaben waren Bildaufteilung und Traversierbarkeitsanalyse basierend auf den Tiefbildern. 
+\end{compactitem}
+\SmallSep
+
+\CVItem{November 2011 - April 2012, Tutor im Bildverarbeitung Kurs
+\newline Albert Ludwigs Universit\"{a}t Freiburg, Deutschland}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item Als Tutor am Lehrstuhl f\"{u}r Computer Vision und Image Processing an der Uni Freiburg meine Aufgaben waren den Studenten mit ihren Programmieraufgaben zu helfen. 
+\item Beteiligte c++ Programmierung mit Bezug zu blurring/de-blurring, optischer Fluss und Segmentierung Aufgaben.
+\end{compactitem}
+\SmallSep
+
+\CVItem{December 2010 - Oktober 2011, Junior Software Developer
+\newline Timecode LLC, Kiew, Ukraine}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+\item arbeitete als Teil eines Teams auf ein Spiel f\"{u}r Android-Plattform. Beteiligte Java Android Programmierung. OpenGL.
+\item arbeitete als Teil eines Teams auf einer via Kinect-Sensor gesteuerter Online Content Store. Meistens bug-fixing. C\#.
+\end{compactitem}
+\SmallSep
+
+% Education
+\CVSection{Ausbildung}
+\CVItem{seit Oktober 2011, Albert Ludwigs Universit\"{a}t Freiburg}\\
+MSc. Angewandte Informatik
+\SmallSep
+
+\CVItem{2007 - 2011, Kyiv National Taras Shevchenko University}\\
+BSc. Fakult\"{a}t f\"{u}r Kybernetik. Angewandte Mathematik. 
+\newline Stuhl von Rechenmethoden.
+\SmallSep
+
+\CVItem{2004 - 2007, Lyzeum 145, Kiew}\\
+H\"{o}here Grundbildung Zertifikat, Mathematik, Physik.
+\SmallSep
+\framebreak
+\clearpage
+\framebreak
+\framebreak
+
+\CVSection{Projekte}
+\CVItem{seit Oktober 2012, ROVINA Project}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item ROVINA - Robots for Exploration, Digital Preservation and Visualization of Archeological Sites
+	\item \href{http://www.rovina-project.eu/}{http://www.rovina-project.eu/} 
+	\item Traversierbarkeitsanalyse basierend auf Tiefbildern
+	\item Gef\"{o}rdert von der Europ\"{a}ischen Kommission
+\end{compactitem}
+\SmallSep
+
+\CVSection{Sprachen}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Englisch (IELTS 8.0)
+	\item Deutsch (~B2) 
+	\item Russisch (Muttersprache) 
+	\item Ukrainisch (Muttersprache)
+\end{compactitem}
+\SmallSep
+
+% Skills
+\CVSection{F\"{a}higkeiten}
+\CVItem{Plattformen und Bibliotheken}
+\begin{multicols}{3}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item ROS 
+	\item OpenCV
+	\item OpenNI 
+	\item OpenGL
+	\item Android
+	\item PCL
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Programmier- und Markup-Sprachen}
+\begin{multicols}{3}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item C++ 
+	\item Java 
+	\item Python 
+	\item Matlab/Octave 
+	\item Xml
+	\item SQLite
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Interessenschwerpunkte}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Mobile Robotics
+	\item Image Processing 
+	\item Kinect 
+	\item Computer Vision 
+	\item Autonomous Navigation
+	\item SLAM
+\end{compactitem}
+\SmallSep
+
+\CVSection{Hobbys}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Android-programmierung
+	\item Volleyball
+	\item Gitarre 
+	\item Rock Musik
+	\item Skifahren
+	\item Hiking
+	\item Biking
+	\item Technologie
+	\item Neue Dinge lernen
+\end{compactitem}
+\SmallSep
+
+% References
+\CVSection{Referenzen}
+Referenzen auf Anfrage.
+
+\clearpage
+\framebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
