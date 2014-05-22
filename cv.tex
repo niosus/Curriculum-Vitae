@@ -20,7 +20,7 @@
 \usepackage{flowfram}										% column layout
 \usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
 \usepackage{graphicx}										% figures
-\usepackage{url}	
+\usepackage{url}
 \usepackage{hyperref}										% URLs
 \usepackage[usenames,dvipsnames]{xcolor}					% color
 \usepackage{multicol}										% columns env.
@@ -44,10 +44,10 @@
 	\newlength{\LeftMainSep}
 	\setlength{\LeftMainSep}{0.3\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
- 
+
 % small static frame for the vertical line
 \newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
- 
+
 % content of the static frame
 \begin{staticcontents}{1}
 \hfill
@@ -56,7 +56,7 @@
 	(0,0) -- (0,\textheight);}%
 \hfill\mbox{}
 \end{staticcontents}
- 
+
 % right frame
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
@@ -72,7 +72,7 @@
 \newenvironment{AboutMe}
 	{\ignorespaces\textbf{\color{Black} About me}}
 	{\Sep\ignorespacesafterend}
-	
+
 \newcommand{\CVSection}[1]
 	{\Large\textbf{#1}\par
 	\SmallSep\normalsize\normalfont}
@@ -91,7 +91,7 @@
 \begin{figure}
 	\hfill
 	\includegraphics[width=0.6\columnwidth]{photo.jpg}
-	\vspace{-6cm}
+	\vspace{-5cm}
 \end{figure}
 
 \begin{flushright}\small
@@ -100,19 +100,19 @@
 	\textbf{Family:} \emph{\\single \\no children\\}
 	\SmallSep
 	\textbf{Phone:}\\
-	+49 (0152) 04471543\\
-	\textbf{Address:}\\ \emph{H\"{a}ndelstrasse 20, \\79104, Freiburg im Br. \\Germany}\\
+	+49 (152) 04471543\\
+	\textbf{Address:}\\ \emph{Mirecourtstr. 12, \\53225, Bonn \\Germany}\\
 	\SmallSep
-	\textbf{In the Web:}
-	\href{mailto:igor.bogoslavskyi@gmail.com}{igor.bogoslavskyi@gmail.com}\\ 
+	\textbf{On the Web:}
+	\href{mailto:igor.bogoslavskyi@gmail.com}{igor.bogoslavskyi@gmail.com}\\
 	\SmallSep
-	\href{http://www.linkedin.com/pub/igor-bogoslavskyi/43/50b/726}{LinkedIn::Igor Bogoslavskyi}\\ 
+	\href{http://www.linkedin.com/pub/igor-bogoslavskyi/43/50b/726}{LinkedIn::Igor Bogoslavskyi}\\
 	\SmallSep
 	\href{https://github.com/niosus}{GitHub::niosus}\\
 	\SmallSep
-	\href{https://www.facebook.com/bogoslavskyi}{Facebook::bogoslavskyi}\\ 
+	\href{https://www.facebook.com/bogoslavskyi}{Facebook::bogoslavskyi}\\
 	\SmallSep
-	\href{https://plus.google.com/118159072920638602239/posts}{G+::Igor Bogoslavskyi}\\ 
+	\href{https://plus.google.com/118159072920638602239/posts}{G+::Igor Bogoslavskyi}\\
 	\SmallSep
 \end{flushright}\normalsize
 \framebreak
@@ -121,14 +121,14 @@
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
 \Huge\bfseries {\color{MidnightBlue} Igor Bogoslavskyi} \\
-\Large\bfseries  Computer Science Student \\
+\Large\bfseries  PhD Candidate \\
 
 \normalsize\normalfont
 
 % About me
 \begin{AboutMe}
-\newline 
-I am a young computer science specialist, particularly interested in Robotics, Machine Learning and Computer Vision fields of study. 
+\newline
+I am a young computer science specialist, particularly interested in Robotics, Machine Learning and Computer Vision fields of study.
 
 I am fond of the idea of autonomous moving vehicles and look forward to having a chance of facing the problems that arise in this field. \\
 \emph{The best way to contact me would be just to send an e-mail}.
@@ -136,24 +136,31 @@ I am fond of the idea of autonomous moving vehicles and look forward to having a
 
 % Experience
 \CVSection{Experience}
-\CVItem{January 2012 - present, Assistant in AIS lab
+\CVItem{May 2014 - Present, PhD candidate
+\newline Rheinische Friedrich-Wilhelms University Bonn, Germany}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item I am now a PhD candidate in the institute of Geodesy, Geoinformation and Kartografie at the University of Bonn.
+\end{compactitem}
+\SmallSep
+
+\CVItem{January 2012 - April 2014, Assistant in AIS lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item As an assistant in the Autonomous Intelligent Systems lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto various platforms as well as unmounted, with relation to RGBD object segmentation and traversability analysis. 
+\item As an assistant in the Autonomous Intelligent Systems lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto various platforms as well as unmounted, with relation to RGBD object segmentation and traversability analysis. Based on the developments in this project I have published a paper at the ECMR'13 conference.
 \end{compactitem}
 \SmallSep
 
 \CVItem{June 2012 - April 2013, Assistant in HRL lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto the NAO robot platform with relation to gesture analysis. 
+	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto the NAO robot platform with relation to gesture analysis.
 \end{compactitem}
 \SmallSep
 
 \CVItem{November 2011 - April 2012, Tutor in Image Processing class
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item As a tutor in the chair of Computer Vision and Image Processing at Uni Freiburg my tasks were to help my fellow students to accomplish the course programming assignments. 
+\item As a tutor in the chair of Computer Vision and Image Processing at Uni Freiburg my tasks were to help my fellow students to accomplish the course programming assignments.
 \item Involved c++ programming with relation to blurring/de-blurring, optical flow and segmentation tasks.
 \end{compactitem}
 \SmallSep
@@ -165,6 +172,10 @@ I am fond of the idea of autonomous moving vehicles and look forward to having a
 \item worked as part of a team on an Online Content Store controlled via Kinect sensor. Mostly finding and fixing bugs. C\#.
 \end{compactitem}
 \Sep
+\framebreak
+\clearpage
+\framebreak
+\framebreak
 
 % Education
 \CVSection{Education}
@@ -173,17 +184,13 @@ MSc. Applied Computer Science
 \SmallSep
 
 \CVItem{2007 - 2011, Kyiv National Taras Shevchenko University}\\
-BSc. Faculty of Cybernetics. Applied Math field. 
+BSc. Faculty of Cybernetics. Applied Math field.
 \newline Chair of Computational Methods
 \SmallSep
 
 \CVItem{2004 - 2007, Lyceum 145, Kyiv}\\
 Higher basic education certificate, Mathematics, Physics.
 \Sep
-\framebreak
-\clearpage
-\framebreak
-\framebreak
 
 % Skills
 \CVSection{Skills}
@@ -192,10 +199,10 @@ Higher basic education certificate, Mathematics, Physics.
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
 	\item Linux
 	\item Windows
-	\item ROS 
+	\item ROS
 	\item OpenCV
 	\item QT
-	\item OpenNI 
+	\item OpenNI
 	\item OpenGL
 	\item Android
 	\item PCL
@@ -206,10 +213,10 @@ Higher basic education certificate, Mathematics, Physics.
 \CVItem{Programming and markup languages}
 \begin{multicols}{3}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item C++ 
-	\item Java 
-	\item Python 
-	\item Matlab/Octave 
+	\item C++
+	\item Java
+	\item Python
+	\item Matlab/Octave
 	\item Xml
 	\item SQLite
 	\item CMake
@@ -227,12 +234,32 @@ Higher basic education certificate, Mathematics, Physics.
 \end{compactitem}
 \SmallSep
 
+\CVSection{Publications}
+\CVItem{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Presented at \href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013}
+	\item The text of the paper can be found here: \\\href{http://www.informatik.uni-freiburg.de/~stachnis/pdf/bogoslavskyi13ecmr.pdf}{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
+\end{compactitem}
+\SmallSep
+
+\CVSection{Honors and Awards}
+\CVItem{MINT Excellence Network Member}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item I was chosen as one of 300 best applicants to the \href{http://www.mlp.de/#/studenten/karriere/stipendienprogramme/mint-excellence}{MINT Excellence Network}. The candidates were chosen from the students who work in the fields of Math, Computer Science, Natural Sciences and Technic across Germany.
+\end{compactitem}
+\Sep
+
+\framebreak
+\clearpage
+\framebreak
+\framebreak
+
 \CVSection{Trainings and Courses}
 \CVItem{CITEC Robotics Summer School}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
 	\item Various presentations on robotics topic
 	\item 5-day workshop on multi-sensoric data aquisition, focus on Kinect and eye-tracking cameras.
-	\item \href{https://www.cit-ec.de/}{https://www.cit-ec.de/} 
+	\item \href{https://www.cit-ec.de/}{https://www.cit-ec.de/}
 \end{compactitem}
 \SmallSep
 
@@ -254,31 +281,11 @@ Higher basic education certificate, Mathematics, Physics.
 \end{compactitem}
 \SmallSep
 
-\CVSection{Publications}
-\CVItem{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013} 
-	\item The text of the paper can be found here: \\\href{http://www.informatik.uni-freiburg.de/~stachnis/pdf/bogoslavskyi13ecmr.pdf}{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor} 
-\end{compactitem}
-\SmallSep
-
-\CVSection{Honors and Awards}
-\CVItem{MINT Excellence Network Member}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item I was chosen as one of 300 best applicants to the \href{http://www.mlp.de/#/studenten/karriere/stipendienprogramme/mint-excellence}{MINT Excellence Network}. The candidates were chosen from the students who work in the fields of Math, Computer Science, Natural Sciences and Technic across Germany.
-\end{compactitem}
-\Sep
-
-\framebreak
-\clearpage
-\framebreak
-\framebreak
-
 \CVSection{Languages}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
 	\item English (IELTS 8.0)
-	\item German (B2+) 
-	\item Russian (Native) 
+	\item German (B2+)
+	\item Russian (Native)
 	\item Ukrainian (Native)
 \end{compactitem}
 \Sep
@@ -287,15 +294,15 @@ Higher basic education certificate, Mathematics, Physics.
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
 	\item Autonomous Navigation
 	\item Mobile Robotics
-	\item Image Processing 
-	\item Computer Vision 
+	\item Image Processing
+	\item Computer Vision
 	\item Machine Learning
 	\item Mathematical Modelling
-	\item Kinect 
+	\item Kinect
 	\item SLAM
 	\item Android Programming
 \end{compactitem}
-\Sep 
+\Sep
 
 \CVSection{Hobbies}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
@@ -303,7 +310,7 @@ Higher basic education certificate, Mathematics, Physics.
 	\item Android-programming
 	\item Photography
 	\item Volleyball
-	\item Playing guitar 
+	\item Playing guitar
 	\item Rock music
 	\item Skiing
 	\item Biking
