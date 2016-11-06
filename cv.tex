@@ -40,9 +40,9 @@
 
 % frame setup (flowfram package)
 % left frame
-\newflowframe{0.3\textwidth}{\textheight}{0pt}{0pt}[left]
+\newflowframe{0.35\textwidth}{\textheight}{0pt}{0pt}[left]
 	\newlength{\LeftMainSep}
-	\setlength{\LeftMainSep}{0.3\textwidth}
+	\setlength{\LeftMainSep}{0.35\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
 
 % small static frame for the vertical line
@@ -90,32 +90,32 @@
 %%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\hfill
-	\includegraphics[width=0.6\columnwidth]{photo.jpg}
+	\includegraphics[width=\columnwidth]{igor.jpg}
 	\vspace{-5cm}
 \end{figure}
 
-\begin{flushright}\small
-	Bogoslavskyi Igor\\
-	\textbf{Nationality:} \emph{\\Ukrainian\\}
-	\textbf{Family:} \emph{\\single \\no children\\}
+\begin{flushleft}\small
+	\textbf{Name:} Bogoslavskyi Igor\\
 	\SmallSep
-	\textbf{Phone:}\\
-	+49 (152) 04471543\\
-	\textbf{Address:}\\ \emph{Mirecourtstr. 12, \\53225, Bonn \\Germany}\\
+	\textbf{Nationality:} \emph{Ukrainian}\\
+	\SmallSep
+	\textbf{Family:} \emph{single, no children}\\
+	\SmallSep
+	\textbf{Phone:} \\ +49 (152) 04471543\\
+	\SmallSep
+	\textbf{Address:}\\ \emph{Ellerstr. 33, \\53119, Bonn \\Germany}\\
 	\SmallSep
 	\textbf{On the Web:}
 	\href{mailto:igor.bogoslavskyi@gmail.com}{igor.bogoslavskyi@gmail.com}\\
 	\SmallSep
-	\href{http://www.linkedin.com/pub/igor-bogoslavskyi/43/50b/726}{LinkedIn::Igor Bogoslavskyi}\\
+	\href{https://de.linkedin.com/in/igor-bogoslavskyi-72650b43}{LinkedIn::Igor Bogoslavskyi}\\
 	\SmallSep
 	\href{https://github.com/niosus}{GitHub::niosus}\\
 	\SmallSep
-	\href{https://www.facebook.com/bogoslavskyi}{Facebook::bogoslavskyi}\\
-	\SmallSep
-	\href{https://plus.google.com/118159072920638602239/posts}{G+::Igor Bogoslavskyi}\\
-	\SmallSep
-\end{flushright}\normalsize
-\framebreak
+\end{flushleft}
+\normalsize
+
+\framebreak{}
 
 
 % Right frame
@@ -123,205 +123,191 @@
 \Huge\bfseries {\color{MidnightBlue} Igor Bogoslavskyi} \\
 \Large\bfseries  PhD Candidate \\
 
-\normalsize\normalfont
+\normalsize\normalfont{}
 
 % About me
 \begin{AboutMe}
 \newline
-I am a young computer science specialist, particularly interested in Robotics, Machine Learning and Computer Vision fields of study.
-
-I am fond of the idea of autonomous moving vehicles and look forward to having a chance of facing the problems that arise in this field. \\
-\emph{The best way to contact me would be just to send an e-mail}.
+Igor Bogoslavskyi is a PhD student at the lab for photogrammetry at the
+University of Bonn led by Cyrill Stachniss. Before moving to Bonn, he has
+finished his Master of Science studies at the University of Freiburg in Germany
+in 2011 and Bachelor of Science in Ukraine in 2007. During his master studies he
+was working as a lab assistant on ROVINA project in AIS laboratory led by
+Wolfram Burgard. His current interests lie in scene interpretation and outdoor
+perception and navigation for mobile robots.
 \end{AboutMe}
 
 % Experience
 \CVSection{Experience}
-\CVItem{May 2014 - Present, PhD candidate, Photogrammetry lab
+\CVItem{2014 --- Present, PhD candidate, Photogrammetry lab
 \newline Rheinische Friedrich-Wilhelms University Bonn, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item I am now a PhD candidate in the institute of Geodesy, Geoinformation and Cartography at the University of Bonn. My advisor is Prof.~Cyrill Stachniss.
+\item I am now a PhD candidate in the institute of Geodesy, Geoinformation and
+Cartography at the University of Bonn. My advisor is Prof.~Cyrill Stachniss.
 \end{compactitem}
 \SmallSep
 
-\CVItem{January 2012 - April 2014, Assistant, AIS lab
+\CVItem{2012 --- 2014, Assistant, AIS lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item As an assistant in the Autonomous Intelligent Systems lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto various platforms as well as unmounted, with relation to RGBD object segmentation and traversability analysis. Based on the developments in this project I have published a paper at the ECMR'13 conference.
+\item As an assistant in the Autonomous Intelligent Systems lab at Uni Freiburg,
+I dealt with Kinect RGBD sensors mounted onto various platforms. I have
+implemented traversability analysis for a mobile robot as part of ROVINA
+project. The developments in this project let to publications at ECMR'13 and
+ICRA'16 conferences.
 \end{compactitem}
 \SmallSep
 
-\CVItem{June 2012 - April 2013, Assistant, HRL lab
+\CVItem{2012 --- 2013, Assistant, HRL lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt with Kinect RGBD sensors mounted onto the NAO robot platform with relation to gesture analysis.
+	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt with
+	Kinect RGBD sensors mounted onto the NAO robot platform and have implemented a
+	system that detected human pointing gestures generating a goal for a robot.
 \end{compactitem}
 \SmallSep
 
-\CVItem{November 2011 - April 2012, Tutor, Image Processing course
+\CVItem{2011 --- 2012, Tutor, Image Processing course
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item As a tutor in the chair of Computer Vision and Image Processing at Uni Freiburg my tasks were to help my fellow students to accomplish the course programming assignments.
-\item Involved c++ programming with relation to blurring/de-blurring, optical flow and segmentation tasks.
+\item During my first semester at Freiburg University I have been tutoring in
+the chair of Computer Vision and Image Processing. My task was to help my fellow
+students to accomplish the course programming assignments.
 \end{compactitem}
 \SmallSep
 
-\CVItem{December 2010 - October 2011, Junior Software Developer
+\CVItem{2010 --- 2011, Junior Software Developer
 \newline Timecode LLC, Kyiv, Ukraine}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-\item worked as part of a team on a game for Android platform. Java Android programming, OpenGL.
-\item worked as part of a team on an Online Content Store controlled via Kinect sensor. C\#.
+\item worked as part of a team on a game for Android platform. Java Android
+programming, OpenGL.\@
+\item worked as part of a team on an Online Content Store controlled via Kinect
+sensor. C\#.
 \end{compactitem}
 \SmallSep
 \framebreak
 \clearpage
-\framebreak
-\framebreak
+\framebreak{}
+	% LEFT FRAME 2nd PAGE
+	\SmallSep{}
+	\vspace{-2mm}
+
+	\CVSection{I Mostly Code In:}
+	\begin{compactitem}[\color{MidnightBlue}$\circ$]
+		\item C\texttt{++}
+		\item Python
+		\item Java
+		\item Matlab/Octave
+	\end{compactitem}
+	\Sep{}
+
+	\CVSection{Languages}
+	\begin{compactitem}[\color{MidnightBlue}$\circ$]
+		\item English (IELTS 8.0)
+		\item German (B2+)
+		\item Russian (Native)
+		\item Ukrainian (Native)
+	\end{compactitem}
+	\Sep{}
+
+	\CVSection{Honors and Awards}
+	\CVItem{MINT Excellence Network Member}
+	\begin{compactitem}[\color{MidnightBlue}$\circ$]
+		\item I was chosen as one of 300 best applicants across Germany to the
+		\href{http://www.mlp.de/#/studenten/karriere/stipendienprogramme/mint-excellence}
+		{MINT Excellence Network}.
+
+		The candidates were chosen from the students who work in the fields of Math,
+		Computer Science, Natural Sciences and Tech across Germany.
+	\end{compactitem}
+	\SmallSep{}
+
+	\CVSection{Fields Of Interest}
+	\begin{compactitem}[\color{MidnightBlue}$\circ$]
+		\item Probabilistic Robotics
+		\item Autonomous Outdoor Navigation
+		\item Scene Interpretation
+		\item Dynamics Detection
+		\item Machine Learning
+		\item SLAM
+	\end{compactitem}
+	\SmallSep
+
+	\vfill
+	\vspace{7.3cm}
+	% References
+	\CVSection{References}
+		References upon request.
+	\Sep
+
+\vfill
+\framebreak{}
 
 % Education
 \CVSection{Education}
-\CVItem{2011 - present, Albert-Ludwigs-Universität Freiburg}\\
-MSc. Applied Computer Science
-\SmallSep
+\CVItem{2014 --- Current, Friedrich-Wilhelms-Universit\"at Bonn}\\
+PhD in photogrammetry and mobile robotics
+\SmallSep{}
 
-\CVItem{2007 - 2011, Kyiv National Taras Shevchenko University}\\
+\CVItem{2011 --- 2014, Albert-Ludwigs-Universit\"at Freiburg}\\
+MSc. Applied Computer Science. Final grade: excellent.
+\SmallSep{}
+
+\CVItem{2007 --- 2011, Kyiv National Taras Shevchenko University}\\
 BSc. Faculty of Cybernetics. Applied Math field.
 \newline Chair of Computational Methods
-\SmallSep
+\SmallSep{}
 
-\CVItem{2004 - 2007, Lyceum 145, Kyiv}\\
+\CVItem{2004 --- 2007, Lyceum 145, Kyiv, Ukraine}\\
 Higher basic education certificate, Mathematics, Physics.
-\SmallSep
+\SmallSep{}
 
-% Skills
-\CVSection{Skills}
-\CVItem{Platforms and libraries}
-\begin{multicols}{3}
+
+\CVSection{Notable Projects}
+\CVItem{2012 --- 2016, \href{http://www.rovina-project.eu/}{ROVINA} Project}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Linux
-	\item Windows
-	\item ROS
-	\item OpenCV
-	\item QT
-	\item OpenNI
-	\item OpenGL
-	\item Android
-	\item PCL
+	\item Presents an autonomous robot for underground exploration.
+	\item Components implemented by me in C\texttt{++}:
+	\begin{compactitem}
+	 	\item traversability analysis for the robot.
+	 	\item a robust homing algorithm to return robot home
+		\item most of exploration and navigation stack of the robot
+	 \end{compactitem}
+	\item Project has received excellent reviews from EU commission.
+	\item My papers were accepted to ECMR'13 and ICRA'16.
 \end{compactitem}
-\end{multicols}
-\SmallSep
-
-\CVItem{Programming and markup languages}
-\begin{multicols}{3}
+\CVItem{2016 --- Current, \href{https://github.com/niosus/EasyClangComplete}{EasyClangComplete}} Project
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item C++
-	\item Java
-	\item Python
-	\item Matlab/Octave
-	\item Xml
-	\item SQLite
-	\item CMake
-\end{compactitem}
-\end{multicols}
-\SmallSep
-
-\CVSection{Projects}
-\CVItem{from October 2012, ROVINA Project}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item \href{http://www.rovina-project.eu/}{ROVINA}  - Robots for Exploration, Digital Preservation and Visualization of Archeological Sites.
-	\item Traversability analysis based on depth images from Kinect-like sensor.
-	\item Funded by European Commission.
-	\item The corresponding paper was accepted to ECMR 2013 (European Conference on Mobile Robotics)
+	\item It is an easy-to-setup plugin for C++ autocompletion.
+	\item Currently 140 stars on GitHub.
 \end{compactitem}
 \SmallSep
 
 \CVSection{Publications}
-\CVItem{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
+\CVItem{Fast range image-based segmentation of sparse 3d laser scans for online operation}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013}
-	\item The text of the paper can be found here: \\\href{http://www.informatik.uni-freiburg.de/~stachnis/pdf/bogoslavskyi13ecmr.pdf}{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
+	\item Presented at \href{http://iros2016.org/}{IROS 2016}
+	\item An approach to segment single Velodyne-produced point clouds much faster then sensor frame-rate.
+\end{compactitem}
+\CVItem{Robust homing for autonomous robots}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item Presented at \href{http://icra2016.org/}{ICRA 2016}
+	\item A robust homing approach for an autonomous robot exploring underground environments.
 \end{compactitem}
 \CVItem{Where to Park? Minimizing the Expected Time to Find a Parking Space}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item To be presented at \href{http://icra2015.org/}{ICRA 2015}
+	\item Presented at \href{http://icra2015.org/}{ICRA 2015}
 	\item An MDP based approach to minimize the expected time to find a parking spot and reach the goal by foot.
 \end{compactitem}
-\SmallSep
-
-\framebreak
-\clearpage
-\framebreak
-\framebreak
-
-\CVSection{Honors and Awards}
-\CVItem{MINT Excellence Network Member}
+\CVItem{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item I was chosen as one of 300 best applicants across Germany to the \href{http://www.mlp.de/#/studenten/karriere/stipendienprogramme/mint-excellence}{MINT Excellence Network}. The candidates were chosen from the students who work in the fields of Math, Computer Science, Natural Sciences and Technic across Germany.
-\end{compactitem}
-\Sep
-
-
-\CVSection{Trainings and Courses}
-\CVItem{CITEC Robotics Summer School}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Various presentations on robotics topic
-	\item 5-day workshop on multi-sensoric data aquisition, focus on Kinect and eye-tracking cameras.
-	\item \href{https://www.cit-ec.de/}{https://www.cit-ec.de/}
+	\item Presented at \href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013}
+	\item A fast and reliable traversability analysis algorithm for a robot
+	operating in underground environments.
 \end{compactitem}
 \SmallSep
 
-\CVItem{AI Course (Online)}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item A course by Sebastian Thrun and Peter Norvig on AI.
-\end{compactitem}
-\SmallSep
-
-\CVItem{AI for Robotics (Online)}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item A course by Sebastian Thrun on Udacity.
-\end{compactitem}
-\SmallSep
-
-\CVItem{CUDA Programming (Online)}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Yet not finished course on Udacity.
-\end{compactitem}
-\SmallSep
-
-\CVSection{Languages}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item English (IELTS 8.0)
-	\item German (B2+)
-	\item Russian (Native)
-	\item Ukrainian (Native)
-\end{compactitem}
-\SmallSep
-
-\CVSection{Fields Of Interest}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Autonomous Navigation
-	\item Mobile Robotics
-	\item Image Processing
-	\item Computer Vision
-	\item Machine Learning
-	\item Planning Under Uncertainty
-	\item Kinect
-	\item SLAM
-	\item Android Programming
-\end{compactitem}
-\SmallSep
-
-\CVSection{Hobbies}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Android-programming (see my app: \href{https://github.com/niosus/LearnIt}{LearnIt})
-	\item Photography
-	\item Playing guitar
-\end{compactitem}
-\SmallSep
-% References
-\CVSection{References}
-References upon request.
-\Sep
-
+\vfill
 \CVSection{\hspace{60mm}Igor Bogoslavskyi}
 \vspace{3mm}
 Date: \hspace{28mm} Signature:
