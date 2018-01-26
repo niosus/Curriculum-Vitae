@@ -70,7 +70,7 @@
 \newcommand{\SmallSep}{\vspace{0.5em}}
 
 \newenvironment{AboutMe}
-	{\ignorespaces\textbf{\color{Black} About me}}
+	{\ignorespaces}
 	{\Sep\ignorespacesafterend}
 
 \newcommand{\CVSection}[1]
@@ -106,12 +106,16 @@
 	\textbf{Address:}\\ \emph{Ellerstr. 33, \\53119, Bonn \\Germany}\\
 	\SmallSep
 	\textbf{On the Web:}
+	\SmallSep
 	\href{mailto:igor.bogoslavskyi@gmail.com}{igor.bogoslavskyi@gmail.com}\\
 	\SmallSep
 	\href{https://de.linkedin.com/in/igor-bogoslavskyi-72650b43}{LinkedIn::Igor Bogoslavskyi}\\
 	\SmallSep
 	\href{https://github.com/niosus}{GitHub::niosus}\\
 	\SmallSep
+	\textbf{University website:}
+	\SmallSep
+	\href{http://www.ipb.uni-bonn.de/people/igor-bogoslavskyi/}{http://www.ipb.uni-bonn.de/people/igor-bogoslavskyi/}\\
 \end{flushleft}
 \normalsize
 
@@ -138,53 +142,57 @@ outdoor perception and navigation for mobile robots.
 \end{AboutMe}
 
 % Experience
-\CVSection{Experience}
+\CVSection{Work Experience}
 \CVItem{2014 --- Present, PhD candidate, Photogrammetry lab
 \newline Rheinische Friedrich-Wilhelms University Bonn, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
 \item I am now a PhD candidate in the institute of Geodesy, Geoinformation and
 Cartography at the University of Bonn. My advisor is Prof.~Dr.~Cyrill
-Stachniss.
+Stachniss
 \end{compactitem}
 \SmallSep
 
-\CVItem{2012 --- 2014, Assistant, AIS lab
+\CVItem{2017, Software Engineer intern
+\newline Stealth startup, Mountain View, USA}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+\item Been part of perception team of an autonomous driving startup
+\item Mostly did LiDAR scene interpretation, calibration
+\end{compactitem}
+
+\CVItem{2012 --- 2014, Research Assistant, AIS lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item As an assistant in the Autonomous Intelligent Systems lab at Uni
-Freiburg, I dealt with Kinect RGBD sensors mounted onto various platforms. I
-have implemented traversability analysis for a mobile robot as part of ROVINA
-project. The developments in this project let to a publication at ECMR'13.
+\item Worked with ASUS Xtion mounted onto various platforms
+\item Implemented traversability analysis for a mobile robot as part of ROVINA
+project
+\item Results published at ECMR'13
 \end{compactitem}
 \SmallSep
 
-\CVItem{2012 --- 2013, Assistant, HRL lab
+\CVItem{2012 --- 2013, Research Assistant, HRL lab
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item As an assistant in the Humanoid Robots Lab at Uni Freiburg, I dealt
-	with Kinect RGBD sensors mounted onto the NAO robot platform and have
-	implemented a system that detected human pointing gestures generating a goal
-	for a robot.
+	\item Worked with Kinect RGBD sensors mounted onto the NAO robot
+	\item Implemented a system that detected human pointing gestures generating a
+	goal for a robot to go to
 \end{compactitem}
 \SmallSep
 
 \CVItem{2011 --- 2012, Tutor, Image Processing course
 \newline Albert Ludwigs University of Freiburg, Germany}
 \begin{compactitem}[\color{RoyalBlue}$\circ$]
-\item During my first semester at Freiburg University I have been tutoring at
-the chair of Computer Vision and Image Processing. My task was to help my fellow
-students to accomplish the course programming assignments.
+\item Working as a TA during the first semester of my masters
+\item Helping students to accomplish Computer Vision programming assignments
 \end{compactitem}
 \SmallSep
 
 \CVItem{2010 --- 2011, Junior Software Developer
 \newline Timecode LLC, Kyiv, Ukraine}
-\begin{compactitem}[\color{MidnightBlue}$\circ$]
-\item worked as part of a team on a game for Android platform. Java Android
-programming, OpenGL.\@
-\item worked as part of a team on an Online Content Store controlled via Kinect
-sensor. C\#.
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\item Android game programming
+\item Store for ASUS Xtion written in C\#
 \end{compactitem}
+
 \SmallSep
 \framebreak
 \clearpage
@@ -206,8 +214,8 @@ sensor. C\#.
 	\begin{compactitem}[\color{MidnightBlue}$\circ$]
 		\item English (IELTS 8.0)
 		\item German (B2+)
-		\item Russian (Native)
 		\item Ukrainian (Native)
+		\item Russian (Native)
 	\end{compactitem}
 	\Sep{}
 
@@ -240,20 +248,20 @@ sensor. C\#.
 % Education
 \CVSection{Education}
 \CVItem{2014 --- Current, Friedrich-Wilhelms-Universit\"at Bonn}\\
-PhD candidate in photogrammetry and mobile robotics.
+PhD candidate in photogrammetry and mobile robotics
 \SmallSep{}
 
 \CVItem{2011 --- 2014, Albert-Ludwigs-Universit\"at Freiburg}\\
-MSc. Applied Computer Science. Final grade: excellent.
+MSc. Applied Computer Science. Final grade: excellent
 \SmallSep{}
 
 \CVItem{2007 --- 2011, Kyiv National Taras Shevchenko University}\\
 BSc. Faculty of Cybernetics. Applied Math.
-\newline Chair of Computational Methods.
+\newline Chair of Computational Methods
 \SmallSep{}
 
 \CVItem{2004 --- 2007, Lyceum 145, Kyiv, Ukraine}\\
-Higher basic education certificate, Mathematics, Physics.
+Higher basic education certificate, Mathematics, Physics
 \SmallSep{}
 
 
@@ -263,45 +271,52 @@ Higher basic education certificate, Mathematics, Physics.
 	\item Presents an autonomous robot for underground exploration.
 	\item Components implemented by me in C\texttt{++}:
 	\begin{compactitem}[\color{MidnightBlue}$-$]
-	 	\item traversability analysis for the robot.
-	 	\item a robust homing algorithm to return robot home.
-		\item most of exploration and navigation stack of the robot.
+	 	\item traversability analysis for the robot
+	 	\item a robust homing algorithm to return robot home
+		\item most of exploration and navigation stack of the robot
 	 \end{compactitem}
-	\item Project has received excellent reviews from EU commission.
-	\item My papers were accepted to ECMR'13 and ICRA'16.
+	\item Project has received excellent reviews from EU commission
+	\item My papers were accepted to ECMR'13 and ICRA'16
 \end{compactitem}
 \CVItem{2016 --- Current, \href{https://github.com/niosus/EasyClangComplete}{EasyClangComplete}}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item A plugin for Sublime Text for C\texttt{/}C\texttt{++} code completion.
+	\item A popular plugin for ST3 for C\texttt{/}C\texttt{++} code completion
 	\item Code: \href{https://github.com/niosus/EasyClangComplete}{https://github.com/niosus/EasyClangComplete}
+\end{compactitem}
+\CVItem{2017 --- Current, \href{https://gitlab.com/srrg-software/srrg_mpr}{MPR}}
+\begin{compactitem}[\color{MidnightBlue}$\circ$]
+	\item MPR --- Multi-Cue Photometric Registration, a unified framework for
+	registering data from various 3D sensors
+	\item Code: \href{https://gitlab.com/srrg-software/srrg_mpr}{https://gitlab.com/srrg-software/srrg\_mpr}
 \end{compactitem}
 \SmallSep
 
+
 \CVSection{First Author Publications}
-\CVItem{Fast range image-based segmentation of sparse 3d laser scans for online operation}
+\CVItem{Efficient Online Segmentation for Sparse 3D Laser Scans}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://iros2016.org/}{IROS 2016}.
-	\item An approach to segment single Velodyne-produced point clouds much
-	faster then sensor frame-rate.
+	\item Velodyne cloud segmentation and ground removal (\href{https://link.springer.com/article/10.1007/s41064-016-0003-y}{PFG 2017})
+	\item Also published as: "Fast range image-based segmentation of sparse 3d
+	laser scans for online operation" (\href{http://iros2016.org/}{IROS 2016})
 	\item Code: \href{https://github.com/niosus/depth_clustering}{https://github.com/niosus/depth\_clustering}
 \end{compactitem}
 \CVItem{Robust homing for autonomous robots}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://icra2016.org/}{ICRA 2016}.
-	\item A robust homing approach for an autonomous robot exploring underground environments.
+	\item A robust homing approach for an autonomous robot exploring underground
+	environments (\href{http://icra2016.org/}{ICRA 2016})
 \end{compactitem}
 \CVItem{Where to Park? Minimizing the Expected Time to Find a Parking Space}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://icra2015.org/}{ICRA 2015}.
-	\item A Markov Decision Processes (MDP) based approach to minimize the
-	expected time to find an empty parking spot and reach the goal by foot.
+	\item An MDP-based approach to minimize the expected time to find an empty
+	parking spot (\href{http://icra2015.org/}{ICRA 2015})
 \end{compactitem}
 \CVItem{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor}
 \begin{compactitem}[\color{MidnightBlue}$\circ$]
-	\item Presented at \href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013}.
 	\item A fast and reliable traversability analysis algorithm for a robot
-	operating in underground environments.
+	operating in underground environments
+	(\href{http://www.iri.upc.edu/ecmr13/#home}{ECMR 2013})
 \end{compactitem}
+\CVItem{More publications on my university web page:}
 \SmallSep
 
 \vfill
