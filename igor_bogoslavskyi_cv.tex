@@ -1,0 +1,238 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+
+\newcommand{\expand}[2]{\hspace*{#1}#2\hspace*{#1}}
+
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \color{white}\bfseries,
+    bubble node font = \color{white}\footnotesize\bfseries,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.3cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, materialorange, materialteal, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.7,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.9,
+}
+\tikzset{
+bubble center node/.append style={text=white},
+bubble node/.append style={text=white}
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Igor}{Bogoslavskyi}
+{Roboticist, Ph.D.}
+
+% Fake text to add separator
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.55]{img/igor}
+  \section{Address}
+    Munich, Germany
+    ~
+  \section{On the Web}
+    \href{https://github.com/niosus}{\texttt{GitHub::niosus}}
+    \href{https://www.linkedin.com/in/igor-bogoslavskyi-phd-72650b43/}{\texttt{LinkedIn::Igor}}
+    ~
+  \section{Phone}
+    +49 1520 4471543
+    ~
+  \section{Mail}
+    \href{mailto:igor.bogoslavskyi@gmail.com}{\small\texttt{igor.bogoslavskyi@gmail.com}}
+    ~
+  % use \expand{margin}{what}to change bubble size, if needed
+  \section{Programming}
+    \smartdiagram[bubble diagram]{
+        \textbf{C++},
+        {\expand{1mm}{Python}},
+        {\expand{0mm}{Java}},
+        {\expand{3mm}{C}},
+        {\expand{2mm}{Bash}},
+        {\expand{0mm}{Matlab}},
+        {\expand{0mm}{Rust}}}
+    ~
+  \section{Fields of Interest}
+    \smartdiagram[bubble diagram]{
+        Robotics,
+        Scene\\interpretation,
+        Sensor\\fusion,
+        Object\\tracking,
+        LiDAR,
+        Localization,
+        Perception,
+        Mapping
+    }
+    ~
+  \section{Languages}
+    \textbf{English}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{German}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Ukrainian}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Russian}\includegraphics[scale=0.40]{img/5stars.png}
+    ~
+\end{aside}
+~
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {02/19 - Now}
+    {Senior Software Engineer}
+    {BMW Group, Munich, Germany}
+    {I work on Obstacle Avoidance feature as part of a team. In addition to that, I am Deputy Facilitator of Software Quality community and I wrote the code for error handling mechanism used throughout the BMW Group codebase.\\}
+  \entry
+    {07/17 - 12/17}
+    {Robotics Software Engineer Intern}
+    {\href{https://nuro.ai/}{Nuro}, Mountain View, USA}
+    {I have been working as part of a small perception team developing the first ever autonomous delivery bot. My work mostly focused on LiDAR scene segmentation, sensor fusion, and sensor calibration. I was responsible for all the software used to calibrate cameras and LiDAR at that time.\\}
+  \entry
+    {05/14 - 02/19}
+    {Research Fellow}
+    {University of Bonn, Bonn, Germany}
+    {I was the first student at the lab and have set up all the lab infrastructure including a full CI setup. Scientifically I have worked on various topics such as mobile robot navigation, range-based scene interpretation, and mapping. Most of my work is published at top-tier international conferences such as ICRA and IROS and most of my code is available as open source.\\}
+  \entry
+    {01/12 - 05/14}
+    {Research Assistant}
+    {AIS lab, University of Freiburg, Freiburg, Germany}
+    {As a research assistant in the Autonomous Intelligent Systems lab at the University of Freiburg, led by Prof.~Dr.~Wolfram Burdard, I dealt with Kinect RGBD sensors mounted onto various platforms. I have implemented traversability analysis for a mobile robot as part of the ROVINA project. The developments in this project led to a publication at ECMR already during my masters.\\}
+  \entry
+    {12/11 - 03/12}
+    {Tutor, Image Processing}
+    {University of Freiburg, Freiburg, Germany}
+    {During my first semester I was tutoring the Image Processing course.\\}
+  \entry
+    {03/10 - 10/11}
+    {Junior Software Engineer}
+    {Timecode LLC, Kyiv, Ukraine}
+    {Developed casual games for Android and a Web store for ASUS Xtion.}
+\end{entrylist}
+\\
+\section{Selected Projects}
+\begin{entrylist}
+  \entry
+    {2016 - Now}
+    {\href{https://github.com/niosus/EasyClangComplete}{EasyClangComplete}}
+    {}
+    {As a hobby project I have written and maintain one of the most used plugins for C/C++ code completion plugins for Sublime Text 3. It has more than 400 stars on GitHub and has been downloaded more than 26000 times.\\\url{https://github.com/niosus/EasyClangComplete}\\}
+  \entry
+    {2017 - Now}
+    {\href{https://gitlab.com/srrg-software/srrg_mpr}{MPR - Multi-Cue Photometric Registration}}
+    {}
+    {I have co-developed MPR --- a unified framework for registering data from various 3D sensors through generalized photometric error minimization.\\\url{https://gitlab.com/srrg-software/srrg_mpr}\\}
+  \entry
+    {2012 - 2016}
+    {\href{http://www.rovina-project.eu/}{ROVINA}}
+    {Freiburg im Br., Bonn}
+    {Developing an autonomous robot for underground exploration I was responsible for traversability analysis, navigation, exploration and some of the mapping tasks. The project received excellent reviews from the EU commission and papers have been published at ECMR and ICRA.}
+\end{entrylist}
+
+\newpage
+
+\afterpage{%
+\newgeometry{left=1.5cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot}
+% material for this page
+
+\section{Video Lectures on C++ on YouTube}
+I have designed and released a course on Modern C++ for Image Processing. It has more than 20000 views to date and gains popularity in the robotics circles. It is available on \href{https://www.youtube.com/playlist?list=PLgnQpQtFTOGR50iIOtO36nK6aNPtVq98C&disable_polymer=true}{\textbf{YouTube}} and on the website of the IPB lab:\\\url{http://www.ipb.uni-bonn.de/teaching/modern-cpp/}.
+
+\section{First-author Publications}
+\begin{itemize}
+\setlength\itemsep{-5mm}
+\item \textbf{A general framework for flexible multi-cue photometric point cloud registration} \emph{ICRA 2018}\\
+\item \textbf{Analyzing the quality of matched 3d point clouds of objects} \emph{IROS 2017}\\
+\item \textbf{Efficient Online Segmentation for Sparse 3D Laser Scans} \emph{PFG 2017}\\
+\item \textbf{Fast range image-based segmentation of sparse 3d laser scans for online operation} \emph{IROS 2016}\\
+\item \textbf{Robust homing for autonomous robots} \emph{ICRA 2016}\\
+\item \textbf{Where to Park? Minimizing the Expected Time to Find a Parking Space} \emph{ICRA 2015}\\
+\item \textbf{Efficient Traversability Analysis for Mobile Robots using the Kinect Sensor} \emph{ECMR 2013}\\
+\end{itemize}
+
+\textbf{More publications on my university web page:} \url{http://www.ipb.uni-bonn.de/people/igor-bogoslavskyi/}\\
+
+\section{Honors \& Awards}
+\begin{entrylist}
+  \entrywide
+    {2013}
+    {MINT Excellence Network Member}
+    {MLP Stiftung}
+    {I was chosen as one of 300 best applicants across Germany to the MINT Excellence Network.\\The candidates were chosen from the students who work in the fields of Maths, Computer Science, Natural Sciences and Tech across Germany.}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entrywide
+    {2014 - 2019}
+    {Ph.D.}
+    {University of Bonn, Germany}
+    {I am the first student of Prof.~Dr.~Cyrill Stachniss and have been at the lab for Photogrammetry and Mobile Robotics since its foundation. My work has resulted in a number of publications on first-tier conferences and in a couple of popular open-source projects. I have graduated with "summa cum laude" and a thesis: "Robot mapping and navigation in real-world environments".\\}
+  \entrywide
+    {2011 - 2014}
+    {MSc. Applied Computer Science}
+    {University of Freiburg, Germany}
+    {Majoring in Robotics, minoring in Computer Vision. My final grade was "excellent". My master thesis title was: "Where to Park? An In-vehicle Parking Space Occupancy Estimation and Guidance System".\\}
+  \entrywide
+    {2007 - 2011}
+    {BSc. Applied Maths}
+    {Cybernetics,  Kyiv National Taras Shevchenko University, Ukraine}
+    {I have been studying applied mathematics at the chair of computational methods. My thesis was focusing on implementing a heat distribution process on an Android device.\\}
+  \entrywide
+    {2004 - 2007}
+    {Higher basic education}
+    {Lyceum 145, Kyiv, Ukraine}
+    {I have been studying at one of the best lyceums in Ukraine with a strong emphasis on Maths, Physics and Programming.\\}
+\end{entrylist}
+
+\begin{flushleft}
+\emph{\today}
+\end{flushleft}
+\vspace{-8mm}
+\begin{flushright}
+\emph{Dr.~Igor Bogoslavskyi}
+\end{flushright}
+
+\clearpage
+\restoregeometry
+}
+
+
+\end{document}
