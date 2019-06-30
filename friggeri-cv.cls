@@ -183,14 +183,20 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{0mm}%
   }\\}
-\newcommand{\entrywide}[4]{%
-  #1\\\parbox[t]{18.5cm}{%
+\newcommand{\entrywide}[5]{%
+  #1 \parbox[t]{#5}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{0mm}%
   }\\}
 
+\newcommand{\shortentrywide}[2]{%
+    \parbox[t]{18.5cm}{%
+    \textbf{#1}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #2}\\%
+  }\\}
 
 %%%%%%%%%%%%%%
 % Side block %
