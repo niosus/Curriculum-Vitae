@@ -148,16 +148,16 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{2mm}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par
 }
 
 \renewcommand{\subsection}[2]{
-  \par\vspace{.5\parskip}%
+  \par\vspace{.25\parskip}%
   \Large\headingfont\color{headercolor} #2%
   \par\vspace{.25\parskip}%
 }
@@ -177,12 +177,17 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
-    #4\vspace{0mm}%
-  }\\}
+  #1&\parbox[t]{11.8cm}{
+      \textbf{#2}\hfill{\footnotesize\addfontfeature{Color=pblue} #3}\\
+  }\vspace{-2mm}\\
+  &\hspace{-2cm}\parbox[t]{13.8cm}{#4}\\
+  % \parbox[t]{11.8cm}{%
+  %   \textbf{#2}%
+  %   \hfill%
+  %   {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+  %   #4\vspace{0mm}%
+  % }\\
+  }
 \newcommand{\entrywide}[5]{%
   #1 \parbox[t]{#5}{%
     \textbf{#2}%
